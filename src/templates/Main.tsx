@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 
-import Nav from './Nav'
-import Footer from './Footer'
+import Nav from '../layout/Nav'
+import Footer from '../layout/Footer'
 
 type IMainProps = {
   meta: ReactNode;
