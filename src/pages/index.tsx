@@ -3,8 +3,8 @@ import { Main } from '../templates/Main';
 
 const META = (
   <Meta
-    title="Salah Times"
-    description="Prayer Times."
+    title="Example Title"
+    description="Description"
   />
 );
 

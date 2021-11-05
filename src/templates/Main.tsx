@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 
 import Nav from './Nav'
-// import Footer from './Footer'
+import Footer from './Footer'
 
 type IMainProps = {
   meta: ReactNode;
@@ -13,7 +13,7 @@ const Main = ({ meta, children }: IMainProps) => (
     <div className="max-w-screen-md mx-auto">
       <Nav meta={meta} />
       <div className="py-5 text-xl content">{children}</div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   </div>
 );

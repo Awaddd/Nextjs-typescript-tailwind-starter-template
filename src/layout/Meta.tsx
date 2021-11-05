@@ -10,7 +10,7 @@ type IMetaProps = {
   canonical?: string;
 };
 
-const Meta = ( { title = "Salah Times", description = "Prayer Times", canonical } : IMetaProps) => {
+const Meta = ( { title = AppConfig.title, description = AppConfig.description, canonical } : IMetaProps) => {
   const router = useRouter();
 
   return (

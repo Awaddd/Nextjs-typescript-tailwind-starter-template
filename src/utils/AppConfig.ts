@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'Salah Times',
-  title: 'Salah Times',
-  description: 'Prayer Times',
+  site_name: 'Site Name',
+  title: 'Site Title',
+  description: 'Site Description',
   locale: 'en',
 };
