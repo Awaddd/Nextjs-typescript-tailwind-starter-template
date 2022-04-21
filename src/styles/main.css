@@ -1,21 +1,63 @@
 @tailwind base;
 
-a {
-  @apply text-blue-700;
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Inter-Regular.ttf");
 }
 
-a:hover {
-  @apply border-b-2 border-blue-700;
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Inter-Bold.ttf");
 }
 
 @tailwind components;
 
 @tailwind utilities;
 
-.content p {
-  @apply my-6;
+h1,
+h2,
+h3,
+h4 {
+  @apply font-bold;
 }
 
-.content ul {
-  @apply my-6;
+h1 {
+  @apply text-3xl;
+  line-height: 1.1;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+
+.app-grid {
+  grid-template-rows: min-content 1fr min-content;
 }

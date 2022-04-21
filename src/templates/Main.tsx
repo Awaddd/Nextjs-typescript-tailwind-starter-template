@@ -1,20 +1,25 @@
-import React, { ReactNode } from 'react';
-
+import { ReactNode } from 'react';
 import Nav from '../layout/Nav'
 import Footer from '../layout/Footer'
+import { Meta } from '../layout/Meta';
 
 type IMainProps = {
-  meta: ReactNode;
+  meta?: ReactNode;
   children: ReactNode;
 };
 
+const DefaultMeta = (
+  <Meta
+    title="Example Title"
+    description="Description"
+  />
+);
+
 const Main = ({ meta, children }: IMainProps) => (
-  <div className="w-full antialiased">
-    <div className="max-w-screen-md mx-auto">
-      <Nav meta={meta} />
-      <div className="py-5 text-xl content">{children}</div>
-      <Footer />
-    </div>
+  <div className="grid w-screen h-full min-h-screen antialiased app-grid font-inter">
+    <Nav meta={meta || DefaultMeta} />
+    <main className="py-5 text-xl">{children}</main>
+    <Footer />
   </div>
 );
 
